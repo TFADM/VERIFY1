@@ -42,7 +42,7 @@
         let pictureUrl = profile.pictureUrl;
   
         // Send a request to the server-side script to check and update the user
-        fetch('https://script.google.com/macros/s/SCRIPT_ID/exec?LINEuserId=' + LINEuserId + '&displayName=' + displayName + '&pictureUrl=' + pictureUrl)
+        fetch('https://script.google.com/macros/s/AKfycbzQ1eCCb9Wcszv8UDPIdoAyZ2r5eElnpjVRTvC0Ypk0PMJUxAeHRC2_jegzBisv3LXl/exec?LINEuserId=' + LINEuserId + '&displayName=' + displayName + '&pictureUrl=' + pictureUrl)
           .then(response => response.json())
           .then(data => {
             // Check if the user is blocked or invalid
